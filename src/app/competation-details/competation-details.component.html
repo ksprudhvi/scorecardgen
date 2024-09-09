@@ -1,0 +1,880 @@
+<div id="there-you-go">
+        <style data-emotion-css="1j5hrwi">
+            .css-1j5hrwi {
+                position: relative;
+                overflow-y: auto;
+            }
+        </style>
+        <div *ngIf="loading" class="loading-overlay">
+            <div class="loading-spinner"></div>
+          </div>
+          
+          <div *ngIf="successMessage" class="notification success">{{ successMessage }}</div>
+          <div *ngIf="errorMessage" class="notification error">{{ errorMessage }}</div>
+          
+          <!-- Your existing component content here -->
+          
+        <div class="css-1j5hrwi">
+            <main>
+                <style data-emotion-css="5czy92">
+                    .css-5czy92 {
+                        margin-top: 2.5vw;
+                    }
+
+                    @media screen and (min-width:35em) and (max-width:63.9em) {
+                        .css-5czy92 {
+                            margin-top: 1.5vw;
+                        }
+                    }
+
+                    @media screen and (max-width:47.9em) {
+                        .css-5czy92 {
+                            margin-top: 0;
+                        }
+                    }
+
+                    @media screen and (min-width:64em) {
+                        .css-5czy92 {
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-flex-direction: row;
+                            -ms-flex-direction: row;
+                            flex-direction: row;
+                        }
+                    }
+                </style>
+                <div class="css-5czy92">
+                    <style data-emotion-css="1cc2js5">
+                        @media screen and (min-width:64em) {
+                            .css-1cc2js5 {
+                                display: -webkit-box;
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-flex-direction: column;
+                                -ms-flex-direction: column;
+                                flex-direction: column;
+                            }
+                        }
+                    </style>
+                    <div class="css-1cc2js5">
+                        <style data-emotion-css="w10m3q">
+                            @media screen and (max-width:63.9em) {
+                                .css-w10m3q {
+                                    display: -webkit-box;
+                                    display: -webkit-flex;
+                                    display: -ms-flexbox;
+                                    display: flex;
+                                    -webkit-flex-direction: row;
+                                    -ms-flex-direction: row;
+                                    flex-direction: row;
+                                }
+                            }
+                        </style>
+                        <div class="css-w10m3q">
+                            <style data-emotion-css="6nvtdu">
+                                .css-6nvtdu {
+                                    border-radius: 8px;
+                                    overflow: hidden;
+                                    width: 0;
+                                    display: inline-block;
+                                    width: 0;
+                                    display: inline-block;
+                                }
+
+                                @media screen and (max-width:34.9em) {
+                                    .css-6nvtdu {
+                                        border-radius: 0;
+                                    }
+                                }
+
+                                @media screen and (max-width:34.9em) {
+                                    .css-6nvtdu {
+                                        width: 88vw;
+                                        height: 48.14589665653495vw;
+                                    }
+                                }
+
+                                @media screen and (min-width:35em) and (max-width:63.9em) {
+                                    .css-6nvtdu {
+                                        width: 57.900000000000006vw;
+                                        height: 31.677811550151976vw;
+                                    }
+                                }
+
+                                @media screen and (min-width:64em) {
+                                    .css-6nvtdu {
+                                        width: 52.5vw;
+                                        height: 28.723404255319146vw;
+                                    }
+                                }
+
+                                @media screen and (min-width:100em) {
+                                    .css-6nvtdu {
+                                        width: 840px;
+                                        height: 459.57446808510633px;
+                                    }
+                                }
+
+                                .css-6nvtdu figure,
+                                .css-6nvtdu img,
+                                .css-6nvtdu video {
+                                    width: 100%;
+                                    min-height: 100%;
+                                }
+
+                                @media screen and (max-width:47.9em) {
+                                    .css-6nvtdu {
+                                        width: 100vw;
+                                        height: 54.7112462006079vw;
+                                    }
+                                }
+
+                                @media screen and (max-width:34.9em) {
+                                    .css-6nvtdu {
+                                        width: 88vw;
+                                        height: 48.14589665653495vw;
+                                    }
+                                }
+
+                                @media screen and (min-width:35em) and (max-width:63.9em) {
+                                    .css-6nvtdu {
+                                        width: 57.900000000000006vw;
+                                        height: 31.677811550151976vw;
+                                    }
+                                }
+
+                                @media screen and (min-width:64em) {
+                                    .css-6nvtdu {
+                                        width: 52.5vw;
+                                        height: 28.723404255319146vw;
+                                    }
+                                }
+
+                                @media screen and (min-width:100em) {
+                                    .css-6nvtdu {
+                                        width: 840px;
+                                        height: 459.57446808510633px;
+                                    }
+                                }
+
+                                .css-6nvtdu figure,
+                                .css-6nvtdu img,
+                                .css-6nvtdu video {
+                                    width: 100%;
+                                    min-height: 100%;
+                                }
+
+                                @media screen and (max-width:47.9em) {
+                                    .css-6nvtdu {
+                                        width: 100vw;
+                                        height: 54.7112462006079vw;
+                                    }
+                                }
+
+                                @media screen and (min-width:64em) {
+                                    .css-6nvtdu {
+                                        margin-left: 10vw !important;
+                                    }
+                                }
+
+                                @media screen and (min-width:100em) {
+                                    .css-6nvtdu {
+                                        margin-left: calc((100vw - 1280px)/2) !important;
+                                    }
+                                }
+
+                                @media screen and (min-width:48em) {
+                                    .css-6nvtdu {
+                                        margin-left: 3vw;
+                                    }
+                                }
+                            </style>
+                            <div class=" css-6nvtdu">
+                                <style data-emotion-css="79elbk">
+                                    .css-79elbk {
+                                        position: relative;
+                                    }
+                                </style>
+                                <div class="css-79elbk">
+                                    <figure class=" css-0">
+                                        <picture>
+                                       <img data-testid="ad-banner-image" data-ref="edp_event_banner_image"
+                                       src={{EventData.eventImageUrl}} alt={{EventData.eventTitle}}+{{EventData.eventVenue}}
+                                                alt="antiSOCIAL presents Jackfruit Dance Party ft.Ankit Pandey, GST, Kartik Shekar &amp; Rishi Sippy || Hyderabad"
+                                                sizes="(max-width:35em) 560px, (max-width:48em) 600px, (max-width:64em) 750px, 800px"
+                                                width="1316">
+                                        </picture>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <style data-emotion-css="31oj63">
+                            .css-31oj63 {
+                                width: 50%;
+                                margin-left: 10vw;
+                                margin-top: 30px;
+                            }
+
+                            @media screen and (max-width:34.9em) {
+                                .css-31oj63 {
+                                    width: 100%;
+                                    padding: 0 18px;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    margin-top: 24px;
+                                }
+                            }
+
+                            @media screen and (min-width:35em) and (max-width:63.9em) {
+                                .css-31oj63 {
+                                    width: 84vw;
+                                    margin: 0 auto;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    margin-top: 30px;
+                                }
+                            }
+
+                            @media screen and (min-width:64em) {
+                                .css-31oj63 {
+                                    width: 52.5vw;
+                                    margin-left: 10vw;
+                                }
+                            }
+
+                            @media screen and (min-width:100em) {
+                                .css-31oj63 {
+                                    margin-left: calc((100vw - 1280px)/2);
+                                    width: 840px;
+                                }
+                            }
+
+                            .css-31oj63 .tab-content {
+                                margin-top: 30px;
+                            }
+
+                            .css-31oj63 .react-tabs__tab-list {
+                                padding: 0;
+                                border-bottom: 1px solid #eee;
+                                display: block;
+                                position: relative;
+                                height: 35px;
+                                white-space: nowrap;
+                                text-align: initial;
+                            }
+
+                            @media screen and (max-width:34.9em) {
+                                .css-31oj63 .react-tabs__tab-list {
+                                    height: 28px;
+                                    width: 88vw;
+                                    margin: 0 auto;
+                                }
+                            }
+
+                            .css-31oj63 .react-tabs__tab-list li {
+                                display: inline-block;
+                                position: relative;
+                                width: auto;
+                                height: 100%;
+                                text-align: center;
+                                overflow: hidden;
+                                font-weight: 400;
+                                cursor: pointer;
+                                line-height: 60px;
+                                color: #abadb3;
+                                margin-right: 30px;
+                                font-size: 21px;
+                                line-height: 28px;
+                            }
+
+                            @media screen and (max-width:34.9em) {
+                                .css-31oj63 .react-tabs__tab-list li {
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                }
+                            }
+
+                            .css-31oj63 .react-tabs__tab-list .active-tab {
+                                color: #0D0F13;
+                                border-bottom: 2px solid #000000;
+                            }
+                        </style>
+                        <div class="css-31oj63" data-tabs="true">
+                            <ul role="tablist" class="react-tabs__tab-list">
+                                <li class="react-tabs__tab active-tab" role="tab" id="react-tabs-0" aria-selected="true"
+                                    aria-disabled="false" aria-controls="react-tabs-1" tabindex="0">
+                                    <style data-emotion-css="yoenp9">
+                                        .css-yoenp9 {
+                                            font-weight: 700;
+                                            display: inline-block;
+                                            height: 100%;
+                                        }
+                                    </style><span class="css-yoenp9">About</span>
+                                </li>
+                            </ul>
+                            <div class="react-tabs__tab-panel tab-content" role="tabpanel" id="react-tabs-1"
+                                aria-labelledby="react-tabs-0">
+                                <div>
+                                    <style data-emotion-css="k0vv7i">
+                                        .css-k0vv7i {
+                                            display: none;
+                                        }
+
+                                        @media screen and (max-width:34.9em) {
+                                            .css-k0vv7i {
+                                                display: block;
+                                            }
+                                        }
+
+                                        @media screen and (min-width:35em) and (max-width:47.9em) {
+                                            .css-k0vv7i {
+                                                display: block;
+                                            }
+                                        }
+                                    </style>
+                                    <div class="css-k0vv7i">
+                                        <div class=" css-1k23y97">
+                                            <div class="css-b3qn21">
+                                                <div class="css-k008qs">
+                                                    <div>
+                                                        <h1 class=" css-1mg2664" data-ref="edp_event_title_mobile">
+                                                            {{EventData.eventTitle}}</h1>
+                                                        <div class="css-1yoi8sp">
+                                                            <div class="css-1jbz40t"><svg width="16" height="17"
+                                                                    viewBox="0 0 16 17" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M3.86772 1.09399H12.1773C13.1793 1.09399 14 1.8863 14 2.84628V14.7306C14 15.5316 13.4747 16.094 12.7593 16.094C12.4131 16.094 12.0908 15.9579 11.7975 15.7158L8.09161 12.6643C8.08867 12.6619 8.06217 12.6531 8.02796 12.6531C8.0165 12.6531 8.00588 12.6541 7.99667 12.6555L7.96295 12.6651L4.24659 15.7157C3.95542 15.9562 3.61666 16.094 3.27026 16.094C2.87019 16.094 2.49709 15.9072 2.26744 15.5886C2.09267 15.346 2 15.051 2 14.7305V2.84628C2 1.88762 2.86383 1.09399 3.86772 1.09399ZM12.1792 2.2478H3.86955C3.51157 2.2478 3.19531 2.53836 3.19531 2.84624V14.7305C3.19531 14.8188 3.21555 14.8832 3.2485 14.9289C3.25409 14.9367 3.26093 14.9401 3.27209 14.9401C3.31322 14.9401 3.38574 14.9106 3.47462 14.8372L7.19099 11.7866C7.41788 11.5993 7.7208 11.4992 8.0298 11.4992C8.33882 11.4992 8.64138 11.5993 8.86789 11.7864L12.5737 14.8378C12.6668 14.9146 12.7272 14.9401 12.7612 14.9401C12.7887 14.9401 12.8084 14.9191 12.8084 14.7305V2.84624C12.8084 2.5239 12.5224 2.2478 12.1792 2.2478Z"
+                                                                        fill="#0C172F"></path>
+                                                                    <path d="M3.64453 5.59389H13.3588" stroke="#0C172F"
+                                                                        stroke-linecap="square">
+                                                                    </path>
+                                                                </svg></div>
+                                                            <p data-ref="edp_event_category_mobile" class="css-15yjbxw">
+                                                                {{EventData.eventCategory}}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="css-ois8gk">
+                                                        <div class="css-1jbz40t"><svg width="16" height="16"
+                                                                viewBox="0 0 16 16" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M2.6 2.35278H13.6C14.4837 2.35278 15.2 3.02699 15.2 3.85867V14.2116C15.2 15.0433 14.4837 15.7175 13.6 15.7175H2.6C1.71634 15.7175 1 15.0433 1 14.2116V3.85867C1 3.02699 1.71634 2.35278 2.6 2.35278ZM13.6 3.4822H2.6C2.37909 3.4822 2.2 3.65075 2.2 3.85867V14.2116C2.2 14.4195 2.37909 14.5881 2.6 14.5881H13.6C13.8209 14.5881 14 14.4195 14 14.2116V3.85867C14 3.65075 13.8209 3.4822 13.6 3.4822Z"
+                                                                    fill="#0C172F"></path>
+                                                                <rect x="4" y="1.41162" width="1" height="2.82353"
+                                                                    rx="0.5" fill="#0C172F">
+                                                                </rect>
+                                                                <rect x="11" y="1.41162" width="1" height="2.82353"
+                                                                    rx="0.5" fill="#0C172F">
+                                                                </rect>
+                                                                <path
+                                                                    d="M15.0984 6.02344V7.15285H1.89844V6.02344H15.0984Z"
+                                                                    fill="#0C172F">
+                                                                </path>
+                                                            </svg></div>
+                                                        <p data-ref="edp_event_datestring_mobile" class="css-1uf8g5w">
+                                                            {{EventData.eventDateString}}</p>
+                                                    </div>
+                                                    <div class="css-ois8gk">
+                                                        <div class="css-1jbz40t"><svg width="16" height="16"
+                                                                viewBox="0 0 16 16" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <g clip-path="url(#clip0)">
+                                                                    <circle cx="8" cy="6" r="2.4" stroke="#0C172F"
+                                                                        stroke-width="1.2"></circle>
+                                                                    <path
+                                                                        d="M10.3321 1.50978C11.6159 2.15878 12.3811 2.91313 12.7821 3.72799C13.1818 4.54032 13.2556 5.48641 13.0179 6.59004C12.5337 8.83735 10.7951 11.5732 8.29618 14.6878C8.14421 14.8773 7.85561 14.8773 7.70364 14.6878C5.20507 11.5733 3.46656 8.83741 2.98235 6.5901C2.74455 5.48646 2.81836 4.54036 3.21795 3.72804C3.61878 2.91319 4.38385 2.15886 5.66738 1.50987C7.11906 0.775855 8.88039 0.77585 10.3321 1.50978Z"
+                                                                        stroke="#0C172F" stroke-width="1.2"></path>
+                                                                </g>
+                                                                <defs>
+                                                                    <clipPath id="clip0">
+                                                                        <rect width="16" height="16" fill="white">
+                                                                        </rect>
+                                                                    </clipPath>
+                                                                </defs>
+                                                            </svg></div>
+                                                        <p data-ref="edp_event_venue_mobile" class="css-1uf8g5w">{{EventData.eventVenue}}/p>
+                                                    </div>
+                                                </div>
+                                                <div aria-label="BUY NOWbuttonDouble tap to activate" role="region"
+                                                    class="css-kccjyv">
+                                                    <div class="css-1sn6u2x">
+                                                        <div class="css-uo4b3v">
+                                                            <div class="css-2tezne"><svg width="15" height="16"
+                                                                    viewBox="0 0 15 16" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M2.17223 4.97276L10.4291 0.945641C10.9254 0.703535 11.5241 0.909674 11.7662 1.40606L13.3414 4.63568C13.5835 5.13207 13.3774 5.73074 12.881 5.97285L4.62416 9.99997C4.12777 10.2421 3.5291 10.0359 3.287 9.53954L1.71181 6.30993C1.4697 5.81354 1.67584 5.21487 2.17223 4.97276Z"
+                                                                        fill="white" stroke="#0C172F"></path>
+                                                                    <path
+                                                                        d="M7.93203 7.34624C8.81569 7.34624 9.53203 6.6299 9.53203 5.74624C9.53203 4.86258 8.81569 4.14624 7.93203 4.14624C7.04838 4.14624 6.33203 4.86258 6.33203 5.74624C6.33203 6.6299 7.04838 7.34624 7.93203 7.34624Z"
+                                                                        fill="white" stroke="#0C172F"></path>
+                                                                    <path
+                                                                        d="M3 5.9729H12.051C12.8794 5.9729 13.551 6.64447 13.551 7.4729V12.795C13.551 13.6235 12.8794 14.295 12.051 14.295H3C2.17157 14.295 1.5 13.6235 1.5 12.795V7.4729C1.5 6.64447 2.17157 5.9729 3 5.9729Z"
+                                                                        fill="white" stroke="#0C172F"></path>
+                                                                    <path
+                                                                        d="M12.1137 5.23975H2.93725C1.86904 5.23975 1 6.12964 1 7.2235V13.6968C1 14.7906 1.86904 15.6805 2.93725 15.6805H12.1137C13.1819 15.6805 14.051 14.7906 14.051 13.6968V11.5042V9.41606V7.2235C14.051 6.12964 13.1819 5.23975 12.1137 5.23975ZM12.1449 14.7314H2.90604C2.28339 14.7314 1.77684 14.2203 1.77684 13.592V7.17009C1.77684 6.54183 2.28339 6.03071 2.90604 6.03071H12.1449C12.7676 6.03071 13.2741 6.54183 13.2741 7.17009V8.93093H11.0157C10.2233 8.93093 9.57858 9.58146 9.57858 10.381C9.57858 11.1806 10.2233 11.8312 11.0157 11.8312H13.2741V13.592C13.2741 14.2203 12.7676 14.7314 12.1449 14.7314ZM13.2741 11.0929H11.0768C10.7463 11.0929 10.4775 10.8091 10.4775 10.4601C10.4775 10.1112 10.7463 9.82736 11.0768 9.82736H13.2741V11.0929Z"
+                                                                        fill="#0C172F" stroke="#0C172F"
+                                                                        stroke-width="0.2"></path>
+                                                                </svg></div>
+                                                            <div class="css-1s8djm3">
+                                                                <p data-ref="edp_price_string_desktop"
+                                                                    class="css-1rgjqr3"><span>$</span>{{EventData.eventPriceString}}</p>
+                                                                <p class="css-9rutzm"></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="css-5m1des"><a
+                                                            href="/event/ramoji-star-experience/buy-page"
+                                                            data-ref="edp_buy_button_desktop" class="css-10lu0qa">BUY
+                                                            NOW</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="css-qxlnel">
+                                                <div class="css-1qfo63q">Event Guide</div>
+                                                <div class="css-12527f7"></div>
+                                                <div class="css-1qo6c03">
+                                                    <div class="css-1a9ozol">
+                                                        <figure class="css-41hr8u">
+                                                            <div class="css-sknxjp">
+                                                                <div class="css-18kytsg"></div>
+                                                            </div>
+                                                        </figure>
+                                                        <div>
+                                                            <p class="css-mnht0q">For Age(s)</p>
+                                                            <p class="css-1oqavfg">Family Friendly</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="css-1a9ozol">
+                                                        <figure class="css-41hr8u">
+                                                            <div class="css-sknxjp">
+                                                                <div class="css-18kytsg"></div>
+                                                            </div>
+                                                        </figure>
+                                                        <div>
+                                                            <p class="css-mnht0q">Language</p>
+                                                            <p class="css-1oqavfg">English</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="css-qxlnel"><button (click)="NavigateToScoreCard()">Navigate to
+                                                    Score Card </button></div>
+
+                                            <div class="css-1qhowen">
+                                                <div class="css-1mozbml">
+                                                    <div class="css-1pwxazr">
+                                                        <p class="css-10tvw78">Invite your friends</p>
+                                                        <p class="css-1iy6lqz">and enjoy a shared experience</p>
+                                                    </div>
+                                                    <div class="css-1f3b2qs">
+                                                        <div>
+                                                            <div class="social-sharing isEdpDesktop css-17vxl0k"><a
+                                                                    class="social-button social-twitter" href="#">Share
+                                                                    this on Twitter</a><a
+                                                                    class="social-button social-whatsapp" href="#">Share
+                                                                    this on Whatsapp</a></div>
+                                                            <div data-ref="edp_share_button" class="css-18ze4j">SHARE
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <style data-emotion-css="gsyh3k">
+                                        .css-gsyh3k {
+                                            margin: 30px auto;
+                                        }
+
+                                        @media screen and (min-width:64em) {
+                                            .css-gsyh3k {
+                                                display: none;
+                                            }
+                                        }
+                                    </style>
+                                    <section class="text css-gsyh3k">
+                                        <div class="css-1qfo63q">Event Guide</div>
+                                        <div class="css-12527f7"></div>
+                                        <div class="css-1qo6c03">
+                                            <div class="css-1a9ozol">
+                                                <figure class="css-41hr8u">
+                                                    <div class="css-sknxjp">
+                                                        <div class="css-18kytsg"></div>
+                                                    </div>
+                                                </figure>
+                                                <div>
+                                                    <p class="css-mnht0q">For Age(s)</p>
+                                                    <p class="css-1oqavfg">Family Friendly</p>
+                                                </div>
+                                            </div>
+                                            <div class="css-1a9ozol">
+                                                <figure class="css-41hr8u">
+                                                    <div class="css-sknxjp">
+                                                        <div class="css-18kytsg"></div>
+                                                    </div>
+                                                </figure>
+                                                <div>
+                                                    <p class="css-mnht0q">Language</p>
+                                                    <p class="css-1oqavfg">English</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <style data-emotion-css="3loask">
+                                        .css-3loask {
+                                            margin-top: 30px;
+                                        }
+
+                                        @media screen and (min-width:64em) {
+                                            .css-3loask {
+                                                display: none;
+                                            }
+                                        }
+                                    </style>
+                                    <div class="css-3loask">
+                                        <style data-emotion-css="end10d">
+                                            .css-end10d {
+                                                margin-top: 30px;
+                                            }
+
+                                            @media screen and (min-width:35em) {
+                                                .css-end10d {
+                                                    display: none;
+                                                }
+                                            }
+                                        </style>
+                                        <div class="css-end10d"></div>
+                                        <div class="css-1mozbml">
+                                            <div class="css-1pwxazr">
+                                                <p class="css-10tvw78">Invite your friends</p>
+                                                <p class="css-1iy6lqz">and enjoy a shared experience</p>
+                                            </div>
+                                            <div class="css-1f3b2qs">
+                                                <div>
+                                                    <div class="social-sharing isEdpDesktop css-17vxl0k"><a
+                                                            class="social-button social-twitter" href="#">Share this on
+                                                            Twitter</a><a class="social-button social-whatsapp"
+                                                            href="#">Share this on
+                                                            Whatsapp</a></div>
+                                                    <div data-ref="edp_share_button" class="css-18ze4j">SHARE</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <style data-emotion-css="19okvs3">
+                                        @media screen and (max-width:34.9em) {
+                                            .css-19okvs3 {
+                                                display: none;
+                                            }
+                                        }
+                                    </style>
+                                    <section class="text text-left css-19okvs3"></section>
+                                    <style data-emotion-css="twmkck">
+                                        .css-twmkck span {
+                                            font-size: 19px;
+                                            margin-bottom: 30px;
+                                            margin-top: 30px;
+                                            font-weight: bold;
+                                            color: #202226;
+                                            display: block;
+                                        }
+
+                                        @media screen and (min-width:48em) {
+                                            .css-twmkck span {
+                                                font-size: 21px;
+                                            }
+                                        }
+
+                                        @media screen and (min-width:64em) {
+                                            .css-twmkck {
+                                                display: none;
+                                            }
+                                        }
+                                    </style>
+                                    <section class="text text-left css-twmkck"><span>About the Event</span></section>
+                                    <style data-emotion-css="1rmq8t0">
+                                        .css-1rmq8t0 span {
+                                            font-size: 19px;
+                                            margin-bottom: 30px;
+                                            margin-top: 30px;
+                                            font-weight: bold;
+                                            color: #202226;
+                                            display: block;
+                                        }
+
+                                        @media screen and (min-width:48em) {
+                                            .css-1rmq8t0 span {
+                                                font-size: 21px;
+                                            }
+                                        }
+                                    </style>
+                                    <section id="section-venue" class="venue-wrapper">
+                                        <section class="text text-align-left custom-widget-title">
+                                            <section class="text text-left custom-widget-title css-1rmq8t0">
+                                                <span>Venue</span>
+                                            </section>
+                                            <h3>AT & T Stadium </h3>
+                                            <p> 1 AT&T Way, Arlington, TX 76011, United States</p>
+                                            <style data-emotion-css="1gl7gat">
+                                                .css-1gl7gat {
+                                                    display: block;
+                                                    text-align: center;
+                                                    border-radius: 3px;
+                                                    border: solid 1px #dddfe2;
+                                                    padding: 0.08em;
+                                                    max-width: 130px;
+                                                    margin-top: 8px;
+                                                }
+                                            </style><a class="css-1gl7gat" href="#">
+                                                <style data-emotion-css="159jbjj">
+                                                    .css-159jbjj {
+                                                        font-size: 12px;
+                                                        font-weight: bold;
+                                                        -webkit-letter-spacing: 0.6px;
+                                                        -moz-letter-spacing: 0.6px;
+                                                        -ms-letter-spacing: 0.6px;
+                                                        letter-spacing: 0.6px;
+                                                        color: #000000;
+                                                    }
+                                                </style><a class="css-1gl7gat" [href]="directionUrl" target="_blank">
+                                            <style data-emotion-css="159jbjj">
+                                                .css-159jbjj {
+                                                    font-size: 12px;
+                                                    font-weight: bold;
+                                                    -webkit-letter-spacing: 0.6px;
+                                                    -moz-letter-spacing: 0.6px;
+                                                    -ms-letter-spacing: 0.6px;
+                                                    letter-spacing: 0.6px;
+                                                    color: #000000;
+                                                }
+                                            </style><span class="css-159jbjj">GET DIRECTIONS</span>
+                                        </a>
+                                            </a>
+                                        </section>
+                                    </section>
+                                    <section class="text text-left css-1rmq8t0">
+                                        <p>
+                                        <p><strong>Competition Duration: </strong>9.00 AM to 5.30 PM</p><br /><br />
+                                        <h3>Competition Highlights :</h3><br />
+                                        <ul>
+                                            <li>Competition Opening ceremony at 09:45 am.&nbsp;</li>
+                                            <li>Shopping at abcd </li>
+                                        </ul><br />
+                                        <p><strong>Competition Terms &amp; Conditions:</strong></p><br /><br />
+                                        <br />
+                                        <p><strong>For Entry:</strong></p><br />
+                                        <ul>
+                                            <li>Each ticket admits one person only.</li>
+                                            <li>Children below 33" height will not be charged.</li>
+                                            <li>The ticket is valid for the day of reservation. </li>
+                                            <li>Personal food, beverages, and bottled water are not allowed - except for
+                                                diabetics and infants.</li>
+                                            <li>The parking ticket is valid for one day; the vehicle parked is at the
+                                                owner’s risk.</li>
+                                        </ul><br />
+                                    </section>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <style data-emotion-css="1cyi4oq">
+                        @media screen and (min-width:64em) {
+                            .css-1cyi4oq {
+                                display: -webkit-box;
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-flex-direction: column;
+                                -ms-flex-direction: column;
+                                flex-direction: column;
+                            }
+                        }
+
+                        @media screen and (max-width:63.9em) {
+                            .css-1cyi4oq {
+                                display: none;
+                            }
+                        }
+                    </style>
+                    <div class="css-1cyi4oq">
+                        <div class="css-1gxwuw0">
+                            <div class=" css-1k23y97">
+                                <div class="css-b3qn21" >
+                                    <div class="css-k008qs" *ngIf="HostAccess === 'true'">
+                                        <div class="toggle-container" >
+                                            <div class="toggle-switch" [class.active]="isLive" (click)="toggleLive()">
+                                              <div class="toggle-handle"></div>
+                                            </div>
+                                            <span>Live</span>
+                                            <div class="toggle-switch orange" [class.active]="!isCompleted" (click)="toggleCompleted()">
+                                              <div class="toggle-handle"></div>
+                                            </div>
+                                            <span>Completed</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="css-b3qn21">
+                                    <div class="css-k008qs">
+                                        <div>
+                                            <h1 class=" css-1mg2664" data-ref="edp_event_title_desktop">{{EventData.eventTitle}}</h1>
+                                            <div class="css-1yoi8sp">
+                                                <div class="css-1jbz40t"><svg width="16" height="17" viewBox="0 0 16 17"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M3.86772 1.09399H12.1773C13.1793 1.09399 14 1.8863 14 2.84628V14.7306C14 15.5316 13.4747 16.094 12.7593 16.094C12.4131 16.094 12.0908 15.9579 11.7975 15.7158L8.09161 12.6643C8.08867 12.6619 8.06217 12.6531 8.02796 12.6531C8.0165 12.6531 8.00588 12.6541 7.99667 12.6555L7.96295 12.6651L4.24659 15.7157C3.95542 15.9562 3.61666 16.094 3.27026 16.094C2.87019 16.094 2.49709 15.9072 2.26744 15.5886C2.09267 15.346 2 15.051 2 14.7305V2.84628C2 1.88762 2.86383 1.09399 3.86772 1.09399ZM12.1792 2.2478H3.86955C3.51157 2.2478 3.19531 2.53836 3.19531 2.84624V14.7305C3.19531 14.8188 3.21555 14.8832 3.2485 14.9289C3.25409 14.9367 3.26093 14.9401 3.27209 14.9401C3.31322 14.9401 3.38574 14.9106 3.47462 14.8372L7.19099 11.7866C7.41788 11.5993 7.7208 11.4992 8.0298 11.4992C8.33882 11.4992 8.64138 11.5993 8.86789 11.7864L12.5737 14.8378C12.6668 14.9146 12.7272 14.9401 12.7612 14.9401C12.7887 14.9401 12.8084 14.9191 12.8084 14.7305V2.84624C12.8084 2.5239 12.5224 2.2478 12.1792 2.2478Z"
+                                                            fill="#0C172F"></path>
+                                                        <path d="M3.64453 5.59389H13.3588" stroke="#0C172F"
+                                                            stroke-linecap="square"></path>
+                                                    </svg></div>
+                                                <p data-ref="edp_event_category_desktop" class="css-15yjbxw">{{EventData.eventCategory}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="css-ois8gk">
+                                            <div class="css-1jbz40t"><svg width="16" height="16" viewBox="0 0 16 16"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M2.6 2.35278H13.6C14.4837 2.35278 15.2 3.02699 15.2 3.85867V14.2116C15.2 15.0433 14.4837 15.7175 13.6 15.7175H2.6C1.71634 15.7175 1 15.0433 1 14.2116V3.85867C1 3.02699 1.71634 2.35278 2.6 2.35278ZM13.6 3.4822H2.6C2.37909 3.4822 2.2 3.65075 2.2 3.85867V14.2116C2.2 14.4195 2.37909 14.5881 2.6 14.5881H13.6C13.8209 14.5881 14 14.4195 14 14.2116V3.85867C14 3.65075 13.8209 3.4822 13.6 3.4822Z"
+                                                        fill="#0C172F"></path>
+                                                    <rect x="4" y="1.41162" width="1" height="2.82353" rx="0.5"
+                                                        fill="#0C172F"></rect>
+                                                    <rect x="11" y="1.41162" width="1" height="2.82353" rx="0.5"
+                                                        fill="#0C172F"></rect>
+                                                    <path d="M15.0984 6.02344V7.15285H1.89844V6.02344H15.0984Z"
+                                                        fill="#0C172F"></path>
+                                                </svg></div>
+                                            <p data-ref="edp_event_datestring_desktop" class="css-1uf8g5w">{{EventData.eventDateString}}</p>
+                                        </div>
+                                        <div class="css-ois8gk">
+                                            <div class="css-1jbz40t"><svg width="16" height="16" viewBox="0 0 16 16"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0)">
+                                                        <circle cx="8" cy="6" r="2.4" stroke="#0C172F"
+                                                            stroke-width="1.2">
+                                                        </circle>
+                                                        <path
+                                                            d="M10.3321 1.50978C11.6159 2.15878 12.3811 2.91313 12.7821 3.72799C13.1818 4.54032 13.2556 5.48641 13.0179 6.59004C12.5337 8.83735 10.7951 11.5732 8.29618 14.6878C8.14421 14.8773 7.85561 14.8773 7.70364 14.6878C5.20507 11.5733 3.46656 8.83741 2.98235 6.5901C2.74455 5.48646 2.81836 4.54036 3.21795 3.72804C3.61878 2.91319 4.38385 2.15886 5.66738 1.50987C7.11906 0.775855 8.88039 0.77585 10.3321 1.50978Z"
+                                                            stroke="#0C172F" stroke-width="1.2"></path>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0">
+                                                            <rect width="16" height="16" fill="white"></rect>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg></div>
+                                            <p data-ref="edp_event_venue_desktop" class="css-1uf8g5w">{{EventData.eventVenue}}</p>
+                                        </div>
+                                    </div>
+                                    <div aria-label="BUY NOWbuttonDouble tap to activate" role="region"
+                                        class="css-kccjyv">
+                                        <div class="css-1sn6u2x">
+                                            <div class="css-uo4b3v">
+                                                <div class="css-2tezne"><svg width="15" height="16" viewBox="0 0 15 16"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M2.17223 4.97276L10.4291 0.945641C10.9254 0.703535 11.5241 0.909674 11.7662 1.40606L13.3414 4.63568C13.5835 5.13207 13.3774 5.73074 12.881 5.97285L4.62416 9.99997C4.12777 10.2421 3.5291 10.0359 3.287 9.53954L1.71181 6.30993C1.4697 5.81354 1.67584 5.21487 2.17223 4.97276Z"
+                                                            fill="white" stroke="#0C172F"></path>
+                                                        <path
+                                                            d="M7.93203 7.34624C8.81569 7.34624 9.53203 6.6299 9.53203 5.74624C9.53203 4.86258 8.81569 4.14624 7.93203 4.14624C7.04838 4.14624 6.33203 4.86258 6.33203 5.74624C6.33203 6.6299 7.04838 7.34624 7.93203 7.34624Z"
+                                                            fill="white" stroke="#0C172F"></path>
+                                                        <path
+                                                            d="M3 5.9729H12.051C12.8794 5.9729 13.551 6.64447 13.551 7.4729V12.795C13.551 13.6235 12.8794 14.295 12.051 14.295H3C2.17157 14.295 1.5 13.6235 1.5 12.795V7.4729C1.5 6.64447 2.17157 5.9729 3 5.9729Z"
+                                                            fill="white" stroke="#0C172F"></path>
+                                                        <path
+                                                            d="M12.1137 5.23975H2.93725C1.86904 5.23975 1 6.12964 1 7.2235V13.6968C1 14.7906 1.86904 15.6805 2.93725 15.6805H12.1137C13.1819 15.6805 14.051 14.7906 14.051 13.6968V11.5042V9.41606V7.2235C14.051 6.12964 13.1819 5.23975 12.1137 5.23975ZM12.1449 14.7314H2.90604C2.28339 14.7314 1.77684 14.2203 1.77684 13.592V7.17009C1.77684 6.54183 2.28339 6.03071 2.90604 6.03071H12.1449C12.7676 6.03071 13.2741 6.54183 13.2741 7.17009V8.93093H11.0157C10.2233 8.93093 9.57858 9.58146 9.57858 10.381C9.57858 11.1806 10.2233 11.8312 11.0157 11.8312H13.2741V13.592C13.2741 14.2203 12.7676 14.7314 12.1449 14.7314ZM13.2741 11.0929H11.0768C10.7463 11.0929 10.4775 10.8091 10.4775 10.4601C10.4775 10.1112 10.7463 9.82736 11.0768 9.82736H13.2741V11.0929Z"
+                                                            fill="#0C172F" stroke="#0C172F" stroke-width="0.2"></path>
+                                                    </svg></div>
+                                                <div class="css-1s8djm3">
+                                                    <p data-ref="edp_price_string_desktop" class="css-1rgjqr3">
+                                                        <span>$</span>{{EventData.eventPriceString}}
+                                                    </p>
+                                                    <p class="css-9rutzm"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="css-5m1des"><a 
+                                                data-ref="edp_buy_button_desktop" class="css-10lu0qa">Intrested</a></div>
+                                    </div>
+                                </div>
+                                <div class="css-qxlnel">
+                                    <div class="css-1qfo63q">Event Guide</div>
+                                    <div class="css-12527f7"></div>
+                                    <div class="css-1qo6c03">
+                                        <div class="css-1a9ozol">
+                                            <figure class="css-41hr8u">
+                                                <div class="css-sknxjp"><img
+                                                        src="https://res.cloudinary.com/dwzmsvp7f/image/fetch/q_75,f_auto/https%3A%2F%2Fmedia.insider.in%2Fimage%2Fupload%2Fc_crop%2Cg_custom%2Fv1687858058%2Frmhtqjozuztkyvcjsw1x.png"
+                                                        alt="" srcset="" class="css-1pd9njl"></div>
+                                            </figure>
+                                            <div>
+                                                <p class="css-mnht0q">For Age(s)</p>
+                                                <p class="css-1oqavfg">Family Friendly</p>
+                                            </div>
+                                        </div>
+                                        <div class="css-1a9ozol">
+                                            <figure class="css-41hr8u">
+                                                <div class="css-sknxjp"><img
+                                                        src="https://res.cloudinary.com/dwzmsvp7f/image/fetch/q_75,f_auto/https%3A%2F%2Fres.cloudinary.com%2Fdwzmsvp7f%2Fimage%2Fupload%2Fv1593509931%2Fsalient-features%2Ficon-features-language.png"
+                                                        alt="" srcset="" class="css-1pd9njl"></div>
+                                            </figure>
+                                            <div>
+                                                <p class="css-mnht0q">Language</p>
+                                                <p class="css-1oqavfg">English</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="css-qxlnel">
+                                    <div class="css-1qfo63q">
+                                        Teams Information
+                                        <img src="/assets/icons/add-profile.svg" alt="+" srcset="" class="css-1pd9njl" (click)="updateTeam()">
+                                      </div>
+                                    
+                                    <div class="css-12527f7"></div>
+                                    <div class="css-1qo6c03">
+                                        <div class="css-1a9ozol">
+                                            <div>
+                                                <p class="css-1oqavfg" *ngFor="let team of TeamsInfo; let i = index">{{team.teamName.name}}</p>
+                                                
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="css-qxlnel" >
+                                    <div class="css-1qfo63q">
+                                        Judges Information
+                                        <img src="/assets/icons/add-profile.svg" alt="+" srcset="" class="css-1pd9njl" (click)="updateJudges()">
+                                      </div>
+                                    <div class="css-12527f7"></div>
+                                    <div class="css-1qo6c03">
+                                        <div class="css-1a9ozol">
+                                            <div>
+                                                <p class="css-1oqavfg" *ngFor="let judge of JudegsInfo; let i = index">{{judge.name}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="css-qxlnel"><div class="css-5m1des"><a 
+                                    data-ref="edp_buy_button_desktop" (click)="NavigateEventSchedule()" class="css-10lu0qa">View and Update Event Schedule</a></div></div> 
+                                <div class="css-qxlnel" ><div class="css-5m1des"><a 
+                                    data-ref="edp_buy_button_desktop" (click)="NavigateToAccessTokens()" class="css-10lu0qa">Get Access Tokens</a></div></div>
+                                    <div class="css-qxlnel"><div class="css-5m1des"><a 
+                                        data-ref="edp_buy_button_desktop" (click)="NavigateToLeadBord()" class="css-10lu0qa">View Lead Bord</a></div></div>    
+                                <div class="css-qxlnel"><div class="css-5m1des"><a 
+                                    data-ref="edp_buy_button_desktop" (click)="NavigateToScoreCard()" class="css-10lu0qa">Navigate to Score Card</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+</div>

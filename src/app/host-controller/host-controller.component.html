@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <div style="overflow: auto; height: 100vh; display: flex; flex-direction: column; align-items: center;">
+    <div *ngIf="loading" class="loading-overlay">
+      <div class="loading-spinner"></div>
+    </div>
+    <div *ngIf="successMessage" class="notification success">{{ successMessage }}</div>
+    <div *ngIf="errorMessage" class="notification error">{{ errorMessage }}</div>
+    <h2 class="ui center aligned header">Host Access Requests </h2>
+    <table class="ui celled table">
+      <thead>
+        <tr>
+            <th>Email</th>
+            <th>Requested Date</th>
+            <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let request of hostRequests">
+            <td>{{ request.Email }}</td>
+            <td>{{ request.CreationDateTimeStamp}}</td>
+            <td>
+              <button
+                class="approve-button"
+                (click)="approveRequest(request)"
+              >
+                Approve   
+              </button>
+              <button
+                class="reject-button"
+                (click)="rejectRequest(request)"
+              >
+                    Reject
+              </button>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+    <p *ngIf="hostRequests.length === 0">No host requests available.</p>
+  </div>
+</body>
+
+</html>
+
+
+
